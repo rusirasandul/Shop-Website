@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Name</title>
+    <link rel="stylesheet" href="contentr.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo2.jpg" alt="Website Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+<div class="row">
+      <div class="column">
+        <img src="images/1-SDG-7-Affordable-and-Clean-Energy-american-public-power-association-419672-unsplash-e1535942140904-992x400.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/Solar-panels-355x300.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/SustainableDevelopmentGoalAffordableandCleanEnergy960x640-min-ed505a.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/A-2905-ODS7-ENG-BBVA-1920x1180.avif" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/1-SDG-7-Affordable-and-Clean-Energy-american-public-power-association-419672-unsplash-e1535942140904-992x400.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/Solar-panels-355x300.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/SustainableDevelopmentGoalAffordableandCleanEnergy960x640-min-ed505a.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/A-2905-ODS7-ENG-BBVA-1920x1180.avif" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="images/1-SDG-7-Affordable-and-Clean-Energy-american-public-power-association-419672-unsplash-e1535942140904-992x400.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/Solar-panels-355x300.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/SustainableDevelopmentGoalAffordableandCleanEnergy960x640-min-ed505a.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/A-2905-ODS7-ENG-BBVA-1920x1180.avif" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <h1 class="topic">Sustainable and Clean Energy</h1>
+
+<div class="energy">
+      <nav class="sec1">
+          <a href="#section1">1-Definitions</a>
+      </nav>
+
+      <nav class="sec1">
+          <a href="#section2">2-Environmental impacts</a>
+      </nav>
+
+      <nav class="sec1">
+          <a href="#section3">3-Sustainable development goals</a>
+      </nav>
+
+      <nav class="sec1">
+          <a href="#section4">4-Renewable energy sources</a>
+      </nav>
+  </div>
+
+  <section id="section1">
+      <nav class="nav1">
+          <h2>1-Definitions</h2>
+          <div class="imageContainer">
+              <img src="images/renewable-energy-1200x600.webp" alt="pageContent1" class="imageItem">
+          </div>
+          <p class="imageText">
+            The United Nations Brundtland Commission described the concept of sustainable development, for which energy is a key component, in its 1987 report Our Common Future. It defined sustainable development as meeting "the needs of the present without compromising the ability of future generations to meet their own needs".[1] This description of sustainable development has since been referenced in many definitions and explanations of sustainable energy
+          </p>
+      </nav>
+  </section>
+
+  <section id="section2">
+      <nav class="nav2">
+          <h2>2-Environmental impacts</h2>
+          <div class="imageContainer">
+              <img src="images/Rajasthan_carrying_firewood.jpeg" alt="pageContent2" class="imageItem">
+          </div>
+          <p class="imageText">The current energy system contributes to many environmental problems, including climate change, air pollution, biodiversity loss, the release of toxins into the environment, and water scarcity. As of 2019, 85% of the world's energy needs are met by burning fossil fuels.[12] Energy production and consumption are responsible for 76% of annual human-caused greenhouse gas emissions as of 2018.[13][14] The 2015 international Paris Agreement on climate change aims to limit global warming to well below 2 °C (3.6 °F) and preferably to 1.5 °C (2.7 °F); achieving this goal will require that emissions be reduced as soon as possible and reach net-zero by mid-century</p>
+      </nav>
+  </section>
+
+  <section id="section3">
+      <nav class="nav3">
+          <h2>3-Sustainable development goals</h2>
+          <div class="imageContainer">
+              <img src="images/People-without-electricity-country-2016.svg.png" alt="pageContent3" class="imageItem">
+          </div>
+          <p class="imageText">
+            Meeting existing and future energy demands in a sustainable way is a critical challenge for the global goal of limiting climate change while maintaining economic growth and enabling living standards to rise.[28] Reliable and affordable energy, particularly electricity, is essential for health care, education, and economic development. As of 2020, 790 million people in developing countries do not have access to electricity, and around 2.6 billion rely on burning polluting fuels for cooking.
+
+            Improving energy access in the least-developed countries and making energy cleaner are key to achieving most of the United Nations 2030 Sustainable Development Goals, which cover issues ranging from climate action to gender equality. Sustainable Development Goal 7 calls for "access to affordable, reliable, sustainable and modern energy for all", including universal access to electricity and to clean cooking facilities by 2030
+          </p>
+      </nav>
+  </section>
+
+  <section id="section4">
+      <nav class="nav4">
+          <h2>4-Renewable energy sources</h2>
+          <div class="imageContainer">
+              <img src="images/Solar-panels-355x300.jpg" alt="pageContent4" class="imageItem">
+          </div>
+          <p class="imageText">
+            Solar-Uses the energy of sun to make power<br>
+            wind power - using turbines to generate electrosity from wind<br>
+            hydropower- most commenly used <br>
+            Geothermal - Uses Radioactive elements to generate power
+          </p>
+
+      </nav>
+  </section>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-image: url("images/Energy usage.gif");
+  background-attachment: fixed;
+  background-size: cover;
+}
+     
+* {box-sizing: border-box;}
+
+.container {
+  display: inline-block;    
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.title {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+      
+
+<h2 class="title">Team Members</h2>
+
+<div class="container">
+  <a href="groupmembers.html#st1">
+    <img src="images/backgroundimage.jpg" alt="Avatar" class="image">
+    <div class="overlay">My Name is John</div>
+  </a>
+</div>
+<div class="container">
+  <a href="groupmembers.html#st2">
+    <img src="images/backgroundimage.jpg" alt="Avatar" class="image">
+    <div class="overlay">My Name is Jane</div>
+  </a>
+</div>
+<div class="container">
+  <a href="groupmembers.html#st3">
+    <img src="images/backgroundimage.jpg" alt="Avatar" class="image">
+    <div class="overlay">My Name is Mike</div>
+  </a>
+</div>
+<div class="container">
+  <a href="groupmembers.html#st4">
+    <img src="images/backgroundimage.jpg" alt="Avatar" class="image">
+    <div class="overlay">My Name is Emily</div>
+  </a>
+</div>
+<script>
+      function showOverlay(id) {
+        var overlay = document.getElementById(id);
+        overlay.style.opacity = 1;
+      }
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Informations From User!</title>
+    <link rel="stylesheet" href="userprofile.css">
+</head>
+
+<body class="background">
+    <h1>Create a User Profile.</h1><br>
+    <input type="button" onclick="startForm()" id="startButton" value="Start"><br><br>
+    <div id="profile-container">
+        <h2>Profile Preview</h2>
+        <ul id="profile-details"></ul>
+        <div id="form-container" class="container">
+            <fieldset class="step">
+                <h4><b><u>Personal Details!</u></b></h4>
+                <div class="label">1-Name:
+                    <p class="output" id="NameOutput"></p>
+                </div>
+                <div class="label">2-Age:
+                    <p class="output" id="AgeOutput"></p>
+                </div>
+                <div class="label">3-Gender:
+                    <p class="output" id="GenderOutput"></p>
+                </div>
+                <div class="label">4-E-mail:
+                    <p class="output" id="EmailOutput"></p>
+                </div>
+            </fieldset>
+            <fieldset class="step">
+                <h4><b><u>Volunteering Task!</u></b></h4>
+                <div class="label">1-Rational:
+                    <p class="output" id="RationalOutput"></p>
+                </div>
+                <div class="label">2-Task:
+                    <p class="output" id="TaskOutput"></p>
+                </div>
+                <div class="label">3-Modern energy to be developed:
+                    <p class="output" id="ModernenergyOutput"></p>
+                </div>
+                <div class="label">4-Energy readily available:
+                    <p class="output" id="ReachOutput"></p>
+                </div>
+            </fieldset>
+            <fieldset class="step">
+                <h4><u><b>Focus On The One!</b></u></h4>
+                <div class="label">1-Energy to improve:
+                    <p class="output" id="ExpectedOutput"></p>
+                </div>
+                <div class="label">2-Idea:
+                    <p class="output" id="IdeaOutput"></p>
+                </div>
+                <div class="label">3-Ideas avaiable to spread:
+                    <p class="output" id="PopularOutput"></p>
+                </div>
+                <div class="label">4-Expected benefits:
+                    <p class="output" id="BenefitOutput"></p>
+                </div>
+            </fieldset>
+        </div>
+        <br>
+        <div id="progress-bar">
+            <div id="progress-bar-fill"></div>
+            <span id="progress-text">0% Complete</span>
+        </div>
+        <br><br><br>
+        <div class="buttonalign">
+            <div id="buttonContainer1"></div>
+            <div id="buttonContainer2"></div>
+            <div id="buttonContainer3"></div>
+        </div>
+    </div>
+    <script src="userprofile.js"></script>
+</body>
+
+</html>

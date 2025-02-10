@@ -1,0 +1,33 @@
+#svg g:hover polyline,
+#svg g:hover line{
+    fill:none;
+    stroke-width:2;
+    stroke:black;
+}
+
+#svg g:hover g text,
+#svg g:hover text{
+    font-weight:bold;
+}
+
+#svg g:hover polygon,
+#svg g:hover rect,
+#svg g:focus polygon
+#svg g:focus rect{
+    fill:red;
+    stroke:black;
+    stroke-width:2;
+}
+h1{
+    text-align:center;
+}
+
+body{
+   
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    background-image:url("energy2.jpg");
+    opacity:0.9;
+    backdrop-filter: blur(4px);
+}

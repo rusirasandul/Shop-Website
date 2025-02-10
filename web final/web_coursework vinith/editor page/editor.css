@@ -1,0 +1,106 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: right; 
+}
+body{
+    background-color: darkblue;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; 
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.status {
+    display: block; 
+    margin: 0 auto; 
+    width: 15%;
+    height: 10%;
+    border: 2px solid white; 
+    border-radius: 10px; 
+    padding: 10px; 
+}
+
+.nav2{
+    text-align: center;
+}
+.text{
+    text-align: center;
+}
+.social__content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+   
+}
+#social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#social ul li {
+    margin-right: 10px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 9%;
+}
+.info{
+    background-color:blueviolet;
+    padding: 20px;
+}
+
+.task{
+    background-color: bisque;
+    text-align: center;
+    padding: 20px; 
+}
+
+.Content_Page{
+    background-color: cadetblue;
+    text-align: center;
+}
+#social a i {
+    font-size: 30px; 
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.contact{
+   font-size: 30px;
+}

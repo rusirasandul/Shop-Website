@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>gallery</title>
+    <script src="script2.js" defer></script>
+    <link rel="stylesheet" href="gallery.css" />
+
+</head>
+<body>
+    <div class="web-gallery" id="webGallery">Web Gallery</div> 
+    <div class="container">
+        <div class="content">
+            <button type="button" name="button" id="leftButton" class="button leftButton"><</button>
+            <div class="imageList">
+                <a href="#" onclick="funcPopup('text1')"><img src="wind.jpg" class="imageItem"></a>
+                <a href="#" onclick="funcPopup('text2')"><img src="solar.jpg" class="imageItem"></a>
+                <a href="#" onclick="funcPopup('text3')"><img src="geothermal3.jpg" class="imageItem"></a>
+                <a href="#" onclick="funcPopup('text4')"><img src="hydroelectric.jpg" class="imageItem"></a>
+                <a href="#" onclick="funcPopup('text5')"><img src="biomass.jpg" class="imageItem"></a>
+                <a href="#" onclick="funcPopup('text6')"><img src="tidal.jpg" class="imageItem"></a>
+                <a href="#" onclick="funcPopup('text7')"><img src="wave.jpg" class="imageItem"></a>
+                <a href="#" onclick="funcPopup('text8')"><img src="nuclear.jpg" class="imageItem"></a>
+            </div>
+            <button type="button" name="button" id="rightButton" class="button rightButton">></button>
+        </div>
+    </div>
+    
+    <div id="popup">
+        <div class="popup-content">
+            <img src="wind.jpg" class="popup-img" id="popupImg1">
+            <div class="popup-text" id="popupText1">
+                <h3>Wind Energy: It is produced through the movement of air, necessitating the installation of wind turbines in areas with consistent wind patterns,
+                    such as mountainous regions or coastal areas. This form of energy is renewable and environmentally friendly, experiencing significant expansion in numerous nations.
+                    In Spain, it constitutes 25.1% of the total installed power capacity nationally.</h3>
+                <a href="#" onclick="funcPopup()" class="close">close</a>
+            </div>
+            
+            <img src="solar.jpg" class="popup-img" id="popupImg2">
+            <div class="popup-text" id="popupText2">
+                <h3>Solar Energy: This energy form, also known as photovoltaic energy, harnesses solar radiation to produce electricity through solar panels.
+                    It is a sustainable and plentiful energy source, with Spain receiving an average of 2,500 to 3,000 hours of sunlight per year.
+                    Importantly, it produces no carbon dioxide emissions into the atmosphere.</h3>
+                <a href="#" onclick="funcPopup()" class="close">close</a>
+            </div>
+            
+            <img src="geothermal3.jpg" class="popup-img" id="popupImg3">
+            <div class="popup-text" id="popupText3">
+                <h3>Geothermal Energy: Geothermal energy is derived from the Earth's internal heat, primarily found in regions with heightened geothermal activity like volcanic areas.
+                    This energy source is renewable, environmentally friendly, and limitless, extracted from the Earth's heat stored in rocks, soils, and groundwater.</h3>
+                <a href="#" onclick="funcPopup()" class="close">close</a>
+            </div>
+
+            <img src="hydroelectric.jpg" class="popup-img" id="popupImg4">
+            <div class="popup-text" id="popupText4">
+                <h3>Hydroelectric Energy: This energy is derived from the kinetic energy of flowing water.
+                    It is distinct from tidal energy, which relies on the ebb and flow of tides, and wave power, which utilizes the motion of ocean waves.
+                    Despite their differences, all three are renewable energy sources.</h3>
+                <a href="#" onclick="funcPopup()" class="close">close</a>
+            </div>
+
+            <img src="biomass.jpg" class="popup-img" id="popupImg5">
+            <div class="popup-text" id="popupText5">
+                <h3>Biomass Energy: It is regarded as a cornerstone of the circular economy and is produced from dedicated crops and various types of waste,
+                    including agricultural residue, forest waste from forest maintenance, agri-food byproducts, and organic waste such as garbage.</h3>
+                <a href="#" onclick="funcPopup()" class="close">close</a>
+            </div>
+
+            <img src="tidal.jpg" class="popup-img" id="popupImg6">
+            <div class="popup-text" id="popupText6">
+                <h3>
+                    Tidal Energy: Tidal energy harnesses underwater turbines in narrow passages,
+                    while wave energy converters use floats to capture wave motion,
+                    both promising vast renewable energy potential from oceans with technological advancements for efficient electricity generation.</h3>
+                <a href="#" onclick="funcPopup()" class="close">close</a>
+            </div>
+
+            <img src="wave.jpg" class="popup-img" id="popupImg7">
+            <div class="popup-text" id="popupText7">
+                <h3>Wave Energy: Wave energy, a renewable resource, stems from oceanic wave movement. Techniques such as deploying generators on the ocean surface are employed to harness this energy for electricity generation,
+                     highlighting the diverse methods available to tap into this sustainable energy source.</h3>
+                <a href="#" onclick="funcPopup()" class="close">close</a>
+            </div>
+
+            <img src="nuclear.jpg" class="popup-img" id="popupImg8">
+            <div class="popup-text" id="popupText8">
+                <h3>Nuclear Energy: Nuclear energy, deemed clean due to minimal greenhouse gas emissions and absence of air pollutants from fossil fuel combustion, has faced safety concerns over accidental radioactive releases.
+                     However, advancements in regulation, technology, and safety measures have significantly improved nuclear safety over recent decades..</h3>
+                <a href="#" onclick="funcPopup()" class="close">close</a>
+            </div>
+        </div>
+    </div>
+    <div class="customize-form">
+        <label for="background-color">Background Color:</label>
+        <select id="background-color">
+            <option value="rgb(79, 67, 5)">Shade Brown</option>
+            <option value="cadetblue">Cadet Blue</option>
+            <option value="darkcyan">Dark Cyan</option>
+            <option value="teal">Teal</option>
+            <option value="darkorchid">darkorchid</option>
+            <option value="darkmagenta">darkmagenta</option>
+            <option value="cyan">cyan</option>
+            <option value="hotpink">hotpink</option>
+            <option value="aqua">aqua</option>
+            <option value="ghostwhite">ghostwhite</option>
+            <option value="greenyellow">greenyellow</option>
+            <option value="red">red</option>
+            <option value="lightblue">lightblue</option>
+            <option value="lightgreen">lightgreen</option>
+        
+            
+    
+        </select>
+
+        <label for="font-family">Font Family:</label>
+        <select id="font-family">
+            <option value="Arial">Arial</option>
+            <option value="georgia">georgia</option>
+            <option value="Poppins">Poppins</option>
+            <option value="verdana">verdana</option>
+            <option value="tahoma">tahoma</option>
+            <option value="garamond">garamond</option>
+            
+        </select>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

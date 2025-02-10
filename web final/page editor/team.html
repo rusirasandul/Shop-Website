@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details.</title>
+    <style>
+        * {
+            margin: 5;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            min-height: 10vh;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(40deg, rgb(93, 201, 143), rgb(80, 211, 234), rgb(213, 116, 226), rgb(80, 211, 234));
+        }
+
+        .slide-content {
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            /* Align items in a row with space between */
+            flex-wrap: wrap;
+            /* Allow items to wrap to the next line */
+        }
+
+        .card {
+            width: calc(25% - 10px);
+            /* Adjust width to fit 4 cards in a row with some spacing */
+            margin-bottom: 40px;
+            /* Add spacing between rows */
+            border-radius: 5px;
+            background-color: rgb(217, 233, 126);
+            position: relative;
+            overflow: hidden;
+            /* Hide overflow to prevent content from leaking */
+            transition: transform 0.3s ease;
+            /* Add transition effect for smoother hover */
+        }
+
+        .image-content,
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 14px;
+        }
+
+        .image-content {
+            position: relative;
+            row-gap: 5px;
+        }
+
+        .card-image {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: #FFF;
+            padding: 3px;
+            overflow: hidden;
+        }
+
+        .card-image .card-img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+            border-radius: 50%;
+            border: 3px solid #4070F4;
+        }
+
+        .name,
+        .description {
+            text-align: center;
+            opacity: 0;
+            /* Initially hide details */
+            transition: opacity 0.3s ease;
+            /* Add transition effect for smoother appearance */
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+            margin-top: 10px;
+            /* Adjust spacing */
+        }
+
+        .description {
+            font-size: 14px;
+            color: #707070;
+        }
+
+        .card:hover .name,
+        .card:hover .description {
+            opacity: 1;
+            /* Show details on hover */
+        }
+
+        .topic {
+            padding: 20px 40px 40px 0px;
+        }
+
+        body .topic {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="topic">STUDENT DETAILS!</h1>
+    <div class="slide-content">
+        <div class="card">
+            <div class="image-content">
+                <div class="card-image">
+                    <img src="person1.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="name"><b>Rusira</b></h2>
+                <p class="description">Student role 1<br>
+                    Splash screen|Shop</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-content">
+                <div class="card-image">
+                    <img src="person2.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="name"><b>Nithula</b></h2>
+                <p class="description">Student role 2<br>
+                    Home page,website template,navigation bar|Feedback</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-content">
+                <div class="card-image">
+                    <img src="person3.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="name"><b>Sineth</b></h2>
+                <p class="description">Student role 3<br>
+                    User profile|Team</p>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-content">
+                <div class="card-image">
+                    <img src="person4.jpg" alt="" class="card-img">
+                </div>
+            </div>
+            <div class="card-content">
+                <h2 class="name"><b>Vineth</b></h2>
+                <p class="description">Student role 4<br>
+                    Gallery|Sitemap</p>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

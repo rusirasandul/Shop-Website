@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Feedback FORM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1 class="title">Feedback Form</h1> 
+            <form action="#" class="feedback">
+                <div class="control-form">
+                    <label for="firstname">Enter Your First Name:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name.." required>
+                </div>
+                <div class="control-form">
+                    <label for="lastname">Enter Your Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+                </div>
+                <div class="control-form">
+                    <label for="email">Enter Your Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="abc@mail.com" required>
+                </div>
+                <div class="control-form">
+                    <p class="firsttimevalidation">Is This Your First Time on This Page?</p>
+                    <input type="radio" id="yes" name="visited-time" value="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="visited-time" value="no" required>
+                    <label for="no">No</label>
+                </div>
+                <div class="control-form">
+                    <p class="navigationquality">Is This Site Easy to Navigate Through?</p>
+                    <input type="radio" id="easynav-yes" name="easynav" value="yes" required>
+                    <label for="easynav-yes">Yes</label>
+                    <input type="radio" id="easynav-no" name="easynav" value="no" required>
+                    <label for="easynav-no">No</label>
+                </div>
+                <div class="control-form">
+                    <label for="improvements">Any Suggestions for Improvement?</label>
+                    <textarea id="improvements" name="improvements" placeholder="Your comments please.." style="height:200px" required></textarea>
+                </div>
+                <label for="feedback">Enter Your Feedback:</label>
+                <div class="rating">
+                    <input type="radio" name="rate" id="rate-1" required>
+                    <label for="rate-1" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2" required>
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3" required>
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4" required>
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-5" required>
+                    <label for="rate-5" class="fas fa-star"></label>
+                </div>
+                <div class="updates">
+                    <label for="contact-method">Select a Contact Method if You Want Further Information:</label>
+                    <select id="contact-method" name="contact-method" required>
+                        <option value="email">Email</option>
+                        <option value="telephone">Telephone</option>
+                        <option value="textmsg">Text Message</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+                <div class="additional">
+                    <label for="additional-comments">Any Additional Comments to Improve Our Site:</label>
+                    <textarea id="additional-comments" name="additional-comments" placeholder="Your comments please.." style="height:200px"></textarea>
+                </div>
+                <div class="submit">
+                    <button class="submitbtn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="feedback.js"></script>
+</body>
+</html>

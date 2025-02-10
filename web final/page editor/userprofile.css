@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(40deg, #0ec1e4, #2a2b2b, #e84149, #348781);
+    background-image: url(picture.jpg);
+    opacity: 0.8;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 180px;
+    padding: px;
+}
+
+.progress-bar {
+    position: relative;
+    height: 30px;
+    border: 1px solid #aa4b30;
+}
+
+#progress-bar-fill {
+    height: 100%;
+    background: #97de24;
+    transition: width 0.5s ease-in-out;
+}
+
+.completed .progress-bar #progress-bar-fill {
+    background: #e33b3b;
+}
+
+.step {
+    background-color: #5fefac;
+    padding: 0px 20px;
+    border-radius: 15px;
+}
+
+.label {
+    padding: 10px;
+}
+
+.completed {
+    background-color: lightgreen;
+}
+
+fieldset {
+    border: #324de0;
+    padding: 20px;
+    height: 380px;
+    width: 250px;
+}
+
+fieldset legend {
+    font-weight: bold;
+}
+
+.output {
+    margin-top: 5px;
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(38, 62, 224);
+}
+
+#profile-details {
+    list-style: none;
+    padding: 0;
+}
+
+#profile-container {
+    border: 1px solid #0e0d0d;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+legend {
+    color: rgb(11, 18, 13);
+    font-family: sans-serif
+}
+
+#progress-bar {
+    position: relative;
+    margin-top: 1px;
+    border: 1px solid #100101;
+    border-radius: 10px;
+    height: 10px;
+    width: 10px;
+    background-color: #f2eaea;
+}
+
+#progress-text {
+    display: inline-block;
+    padding: 5px;
+    color: #f2eaea;
+}
+
+.buttonalign {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonalign button {
+    padding: 10px 60px;
+    background-color: rgb(3, 2, 2);
+    color: rgb(215, 221, 51);
+    border: #0c0b0b;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.01s;
+}
+
+.buttonalign button:last-child {
+    margin-right: 20px;
+}
+
+.buttonalign button:hover {
+    background-color: #711d90;
+}
+
+#startButton {
+    padding: 10px 60px;
+    background-color: rgb(19, 17, 17);
+    border-radius: 20px;
+    color: rgb(175, 190, 18);
+}
+
+#startButton:hover {
+    background-color: rgb(150, 21, 236);
+}

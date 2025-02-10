@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    background-image: url(images/environment.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative; 
+}
+#banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black overlay */
+}
+
+
+
+.a{
+    text-align: center;
+    color: #f1be07;
+    padding-top: 30px;
+}
+
+.a h1{
+    font-size: 40px;
+}
+
+.b {
+    name: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.c{
+    name: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.d {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.e{
+    text-align: center;
+    padding-top: 15px;  
+}
+
+.f{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.g{
+    text-align: center;
+    padding-top: 10px; 
+}
+
+.h{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.six{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.j{
+    text-align: center;
+    padding-top: 20px; 
+}
+
+.k{
+    text-align: center;
+    padding-top: 20px; 
+}  
+
+.l{
+    text-align: center;
+    padding-top: 15px; 
+}
+
+.m{
+    text-align: center;
+    padding-top: 20px; 
+}
+
+.n{
+    padding-top: 10px;
+}
+
+.submit-btn{
+    margin-top: 30px; 
+    text-align: center; 
+}
+
